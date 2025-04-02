@@ -1,0 +1,131 @@
+/* ✅ Global Variables */
+:root {
+  --primary-color: #ff6600;
+  --transition-speed: 0.3s;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Main Container */
+.updated-container {
+  width: 100%;  
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+}
+
+
+.updated-category {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.updated-category-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.updated-product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.updated-product {
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform  0.2s ease;
+  gap: 15px;
+}
+
+.updated-product:hover {
+  transform: scale(1.05);
+}
+
+.product-img-container {
+  width: 100px;  
+  height: 100px; 
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+/* ✅ Product Info */
+.updated-product-info {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.updated-product-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.updated-product-price {
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}
+
+.updated-old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.view-details {
+  margin-top: 5px;
+  padding: 6px 10px;
+  background: gray;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background var(--transition-speed);
+}
+
+.view-details:hover {
+  background: rgb(71, 69, 69)
+}
+
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .updated-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 कॉलम */
+  }
+
+  .product-img-container {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .updated-container {
+    grid-template-columns: 1fr; /* 1 कॉलम */
+  }
+
+  .updated-product {
+    flex-direction: column; /* ✅ Mobile में Image ऊपर और Text नीचे होगा */
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-img-container {
+    width: 120px;
+    height: 120px;
+  }
+}

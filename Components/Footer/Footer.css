@@ -1,0 +1,226 @@
+/* ====================================================
+                        NEWSLETTER 
+===================================================== */
+.newsletter-container {
+    background: #232f3e;
+    color: #fff;
+    margin-top: 70px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .newsletter-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .email-icon {
+    width: 30px;
+
+  }
+  
+  .newsletter-text {
+    font-size: 18px;
+  }
+  
+  .cupon-text {
+    flex: 1;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .newsletter-form {
+    display: flex;
+  }
+  
+  .newsletter-input,
+  .newsletter-btn {
+    font-size: 12px;
+  }
+  
+  .newsletter-input {
+    padding-inline: 1.25rem;
+    width: 100%;
+    height: 48px;
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  
+  .newsletter-btn {
+    background: #172c46;
+    color: #fff;
+    padding-inline: 2rem;   
+    border-radius: 0 0.25rem 0.25rem 0;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ;
+  }
+
+  .newsletter-btn:hover {
+    background-color: rgb(156, 153, 149);
+  }
+  
+  /* ====================================================
+                      FOOTER 
+===================================================== */
+.footer {
+    background-color: #000000;
+    padding: 50px 15px;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;   
+    color: rgb(214, 219, 229)
+  }
+  
+  .footer-subtitle {
+    color: rgb(214, 219, 229);
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .footer-description {
+    line-height: 2.1;
+    color: gray;
+  }
+  
+  .footer-description span {
+    font-weight: var(--weight-600);
+    color: rgb(214, 219, 229);
+  }
+  
+  .footer-socal {
+    padding-top: 10px;
+  }
+  
+  .footer-socal-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-link-icon {
+    font-size: 20px;
+    color: rgb(214, 219, 229);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-link-icon:hover {
+    color: rgb(0, 187, 255);
+  }
+  
+  .footer-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(214, 219, 229);
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: gray ;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    margin-left: 5px;
+    color: rgb(214, 219, 229);
+  }
+  
+  .payment-img {
+    width: 200px;
+    margin-top: 15px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between; 
+    border-top: 2px solid rgb(214, 219, 229);
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  
+  .copyright,
+  .designer {
+    color: rgb(214, 219, 229);
+    padding-top: 20px;
+  }
+  
+  /* ============================
+       Responsive Design (768px) 
+  =============================== */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  
+    .payment-img {
+        display: block;
+        margin: 0 auto;
+        text-align: center; 
+    }
+}
+  
+  /* ============================
+       Responsive Design (576px) 
+  =============================== */
+  @media screen and (max-width: 576px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .footer-socal-links {
+      justify-content: center;
+    }
+  }
+  
+  
+  /* ====================================================
+                          RESPONSIVE STYLES
+  ===================================================== */
+@media(max-width: 768px) {
+  .newsletter-form{
+    margin-top: 10px;
+    width:700px;
+    font-family: var(--body-font);
+}
+  .newsletter-input,
+  .newsletter-btn {
+    height: 40px;
+ }  
+
+}
+@media(max-width: 480px) {
+    .cupon-text{
+        display: none;
+     }
+     .newsletter-input,
+     .newsletter-btn {
+       height: 30px;
+    }  
+}

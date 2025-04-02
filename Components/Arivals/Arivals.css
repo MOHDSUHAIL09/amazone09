@@ -1,0 +1,54 @@
+.arivals-title {
+    font-size: 2em;
+    padding: 20px;
+  }
+  
+  .arivals-title span {
+    color: var(--first-color);
+  }
+  
+  .slider-wrapper {
+    padding: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .slide-arivals {
+    background: #fff;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+  }
+  
+  .slide-arivals:hover {
+    transform: translateY(-5px);
+  }
+  
+  .arivals-img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .arivals-content .category {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .arivals-content .product {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .arivals-content .new-price {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  
+  .arivals-content del {
+    color: #888;
+    margin-left: 5px;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+  }
+

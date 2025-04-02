@@ -1,0 +1,147 @@
+.skeleton-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Navbar Skeleton */
+.skeleton-navbar {
+  width: 100%;
+  height: 60px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-logo {
+  width: 120px;
+  height: 40px;
+  background: #cfcfcf;
+  border-radius: 5px;
+}
+
+.skeleton-search {
+  flex: 1;
+  height: 40px;
+  background: #cfcfcf;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.skeleton-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.skeleton-icon {
+  width: 40px;
+  height: 40px;
+  background: #cfcfcf;
+  border-radius: 50%;
+}
+
+/* Banner Skeleton */
+.skeleton-banner {
+  width: 100%;
+  height: 280px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Product Grid Skeleton */
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Product Card Skeleton */
+.skeleton-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: shimmer 1.5s infinite linear;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 220px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Title Skeleton */
+.skeleton-title {
+  width: 80%;
+  height: 16px;
+  background: #d9d9d9;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-title.short {
+  width: 60%;
+  height: 14px;
+}
+
+/* Rating Skeleton */
+.skeleton-rating {
+  width: 60px;
+  height: 12px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Price Skeleton */
+.skeleton-price {
+  width: 50%;
+  height: 18px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Add to Cart Button Skeleton */
+.skeleton-button {
+  width: 70%;
+  height: 38px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f5f5f5;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skeleton-category-slider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
