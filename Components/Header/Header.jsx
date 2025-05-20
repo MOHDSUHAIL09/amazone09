@@ -25,6 +25,7 @@ const Navbar = () => {
         <i className="fa-solid fa-location-dot Location"></i></div>
         <p>Update Location</p>
       </div>
+
       <div className="search-container1">
         <select className="search-dropdown">
           <option value="all">All</option>
@@ -37,6 +38,8 @@ const Navbar = () => {
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
+
+
           
       {/* 📌 Navigation Links */}
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
@@ -70,6 +73,8 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
+
+    
 
   {/* 📌 Navbar (Hamburger + Bottom Navbar) */}
   <div className="navbar-container">
@@ -116,9 +121,6 @@ const Navbar = () => {
          <div className="logo-menu">Luxewave</div>
           <i className="fa-solid fa-xmark" onClick={() => setMenuOpen(false)}></i>
    </div>
-
-        
-
         {/* 📌 Sidebar Links */}
         <ul className="category-links">
           <li><Link to="/">Today's Deals</Link></li>
